@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/magickig/CLionProjects/Aisd4/main.cpp
+iostream
+-
+math.h
+-
+float.h
+-
+stdlib.h
+-
+

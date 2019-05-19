@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Aisdv3.dir/main.cpp.o  -o Aisdv3 

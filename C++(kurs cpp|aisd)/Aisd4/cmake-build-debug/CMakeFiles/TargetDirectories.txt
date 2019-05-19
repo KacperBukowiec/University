@@ -1,0 +1,3 @@
+/home/magickig/CLionProjects/Aisd4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/magickig/CLionProjects/Aisd4/cmake-build-debug/CMakeFiles/Aisd4.dir
+/home/magickig/CLionProjects/Aisd4/cmake-build-debug/CMakeFiles/edit_cache.dir
