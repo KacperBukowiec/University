@@ -1,0 +1,144 @@
+# depslib dependency file v1.0
+1522155276 source:c:\users\magickig\desktop\c++\data\main.cpp
+	<iostream>
+	<windows.h>
+	"data.hpp"
+
+1522155383 source:c:\users\magickig\desktop\c++\data\data.cpp
+	"data.hpp"
+
+1522154378 c:\users\magickig\desktop\c++\data\data.hpp
+	<iostream>
+	<time.h>
+	<windows.h>
+
+1522247250 source:c:\users\tat\desktop\data\data.cpp
+	"data.hpp"
+
+1522247250 c:\users\tat\desktop\data\data.hpp
+	<iostream>
+	<time.h>
+	<windows.h>
+
+1522247250 source:c:\users\tat\desktop\data\main.cpp
+	<iostream>
+	<windows.h>
+	"data.hpp"
+
+1522863416 source:c:\users\magickig\desktop\data\data.cpp
+	"data.hpp"
+
+1522876595 c:\users\magickig\desktop\data\data.hpp
+	<iostream>
+	<time.h>
+	<windows.h>
+
+1522876905 source:c:\users\magickig\desktop\data\main.cpp
+	<iostream>
+	<windows.h>
+	"wydarzenie.hpp"
+
+1522870179 source:c:\users\magickig\desktop\data\datagodz.cpp
+	"datagodz.hpp"
+
+1522876739 c:\users\magickig\desktop\data\datagodz.hpp
+	<iostream>
+	<time.h>
+	<windows.h>
+	"data.hpp"
+
+1522877220 source:c:\users\magickig\desktop\data\wydarzenie.cpp
+	"wydarzenie.hpp"
+
+1522877104 c:\users\magickig\desktop\data\wydarzenie.hpp
+	"datagodz.hpp"
+
+1522922808 source:c:\users\298810\desktop\data\data.cpp
+	"data.hpp"
+	<stdexcept>
+
+1522922818 c:\users\298810\desktop\data\data.hpp
+	<iostream>
+	<time.h>
+	<windows.h>
+
+1522919991 source:c:\users\298810\desktop\data\main.cpp
+	<iostream>
+	<windows.h>
+	"wydarzenie.hpp"
+	<vector>
+	<algorithm>
+
+1522921078 c:\users\298810\desktop\data\wydarzenie.hpp
+	"datagodz.hpp"
+
+1522921013 c:\users\298810\desktop\data\datagodz.hpp
+	<iostream>
+	<time.h>
+	<windows.h>
+	"data.hpp"
+	<tuple>
+
+1522923068 source:c:\users\298810\desktop\data\wydarzenie.cpp
+	"wydarzenie.hpp"
+
+1522923257 source:c:\users\298810\desktop\data\datagodz.cpp
+	"datagodz.hpp"
+
+1522926410 source:c:\users\magickig\desktop\datav2\data.cpp
+	"data.hpp"
+	<stdexcept>
+
+1522926420 c:\users\magickig\desktop\datav2\data.hpp
+	<iostream>
+	<time.h>
+	<windows.h>
+
+1522962913 source:c:\users\magickig\desktop\datav2\datagodz.cpp
+	"datagodz.hpp"
+
+1522924614 c:\users\magickig\desktop\datav2\datagodz.hpp
+	<iostream>
+	<time.h>
+	<windows.h>
+	"data.hpp"
+	<tuple>
+
+1522962900 source:c:\users\magickig\desktop\datav2\main.cpp
+	<iostream>
+	<windows.h>
+	"wydarzenie.hpp"
+	<vector>
+	<algorithm>
+
+1522924680 c:\users\magickig\desktop\datav2\wydarzenie.hpp
+	"datagodz.hpp"
+
+1522962894 source:c:\users\magickig\desktop\datav2\wydarzenie.cpp
+	"wydarzenie.hpp"
+
+1522926410 source:c:\users\magickig\desktop\c++\datav2\data.cpp
+	"data.hpp"
+	<stdexcept>
+
+1522926420 c:\users\magickig\desktop\c++\datav2\data.hpp
+	<iostream>
+	<time.h>
+	<windows.h>
+
+1522962913 source:c:\users\magickig\desktop\c++\datav2\datagodz.cpp
+	"datagodz.hpp"
+
+1522924614 c:\users\magickig\desktop\c++\datav2\datagodz.hpp
+	<iostream>
+	<time.h>
+	<windows.h>
+	"data.hpp"
+	<tuple>
+
+1522962894 source:c:\users\magickig\desktop\c++\datav2\wydarzenie.cpp
+	"wydarzenie.hpp"
+
+1522924680 c:\users\magickig\desktop\c++\datav2\wydarzenie.hpp
+	"datagodz.hpp"
+

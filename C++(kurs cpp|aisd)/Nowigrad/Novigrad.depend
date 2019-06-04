@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1521059563 source:c:\users\magickig\desktop\nowigrad\passiflora.cpp
+	<iostream>
+	"StosyNowigradu.hpp"
+
+1521059752 c:\users\magickig\desktop\nowigrad\stosynowigradu.hpp
+	<iostream>
+
+1521063928 source:c:\users\magickig\desktop\c++\nowigrad\passiflora.cpp
+	<iostream>
+	"StosyNowigradu.hpp"
+
+1521063352 c:\users\magickig\desktop\c++\nowigrad\stosynowigradu.hpp
+	<iostream>
+
