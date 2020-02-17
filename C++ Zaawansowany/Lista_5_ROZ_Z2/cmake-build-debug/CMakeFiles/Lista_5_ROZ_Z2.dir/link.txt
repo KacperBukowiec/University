@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Lista_5_ROZ_Z2.dir/main.cpp.o  -o Lista_5_ROZ_Z2 
