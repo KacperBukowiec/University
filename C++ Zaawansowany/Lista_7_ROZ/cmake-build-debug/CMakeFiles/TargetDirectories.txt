@@ -1,0 +1,3 @@
+/home/magickig/CLionProjects/Lista_7_ROZ/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/magickig/CLionProjects/Lista_7_ROZ/cmake-build-debug/CMakeFiles/Lista_7_ROZ.dir
+/home/magickig/CLionProjects/Lista_7_ROZ/cmake-build-debug/CMakeFiles/edit_cache.dir

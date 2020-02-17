@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Lista_7_ROZ.dir/main.cpp.o  -o Lista_7_ROZ 
