@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/magickig/CLionProjects/L2_CPP_ROZ/main.cpp
+iostream
+-
+random
+-
+memory
+-
+cstdlib
+-
+

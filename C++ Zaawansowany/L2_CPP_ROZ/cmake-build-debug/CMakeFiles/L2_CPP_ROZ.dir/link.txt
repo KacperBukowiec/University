@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/L2_CPP_ROZ.dir/main.cpp.o  -o L2_CPP_ROZ 
