@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/magickig/CLionProjects/Lista_4_ROZ/main.cpp
+iostream
+-
+vector
+-
+list
+-
+string
+-
+set
+-
+algorithm
+-
+iterator
+-
+numeric
+-
+

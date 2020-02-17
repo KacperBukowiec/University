@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/magickig/CLionProjects/L3_CPP_ROZ/main.cpp
+iostream
+-
+random
+-
+limits
+-
+cmath
+-
+chrono
+-
+ratio
+-
+
