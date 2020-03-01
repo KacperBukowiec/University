@@ -1,1 +1,67 @@
 
+input = "000110010001111"
+len_of_D = 5
+
+
+def opt_dist(input, len_of_d):
+    max_number = 0
+    max_place = 0
+    if len_of_d == 0:
+        return input.count("1")
+
+    for i in range(len(input) - len_of_d + 1):
+        if max_number < input[i:i + len_of_d].count("1"):
+            max_number = input[i:i + len_of_d].count("1")
+            max_place = i
+
+    if input[max_place:max_place + len_of_d].count("1") == len_of_d:
+        return input.count("1") - len_of_d
+
+    return len_of_d - max_number + input.count("1") - max_number
+
+
+print(opt_dist(input, len_of_D))
+
+text = "asdasd"
+polish_words = {}
+list_of_threads = [["", ""]]  # [obecne zdanie,obecne słowo]
+
+for character in text:
+    for thread in range(len(list_of_threads)):
+        current_sentence = list_of_threads[thread][0]
+        current_word = list_of_threads[thread][1]
+        current_word += character
+        if current_word in polish_words:
+            list_of_threads.append([current_sentence + " " + current_word, ""])
+        list_of_threads[thread][1] = current_word
+
+zdania = []
+for i in list_of_threads:
+    if i[1] == "":
+        zdania.append(i[0])
+
+if len(zdania) == 1:
+    print(zdania[0])
+else:
+    max_sum = 0
+    max_sentence = ""
+    for zdanie in zdania:
+        if sum([len(x) ** 2 for x in zdanie.split()]) > max_sum:
+            max_sum = sum([len(x) ** 2 for x in zdanie.split()])
+            max_sentence = zdanie
+    print(max_sentence)
+
+print("".join(['1','1','3']))
+###POKER
+#możlliwe przypadki kiedy kiedy blotkarz jest lepszy:
+#para - nigdy
+#dwie pary
+#trójka
+#strit - figurant nie może go mieć
+#kolor
+#full house
+#kareta
+#poker - wygrywa blotkarz, figurant nie możę mieć pokera
+
+
+
