@@ -1,4 +1,5 @@
 
+
 input = "000110010001111"
 len_of_D = 5
 
@@ -51,17 +52,172 @@ else:
             max_sentence = zdanie
     print(max_sentence)
 
-print("".join(['1','1','3']))
-###POKER
-#możlliwe przypadki kiedy kiedy blotkarz jest lepszy:
-#para - nigdy
-#dwie pary
-#trójka
-#strit - figurant nie może go mieć
-#kolor
-#full house
-#kareta
-#poker - wygrywa blotkarz, figurant nie możę mieć pokera
+# print("".join(['1','1','3']))
+
+
+import random
+blotkarz = []
+figurant = []
+for i in range(2 ,11):
+    blotkarz.append([i, "1"])
+    blotkarz.append([i, "2"])
+    blotkarz.append([i, "3"])
+    blotkarz.append([i, "4"])
+
+for i in range(1 ,5):
+    figurant.append([i, "1"])
+    figurant.append([i, "2"])
+    figurant.append([i, "3"])
+    figurant.append([i, "4"])
+
+b_cards_numbers = random.sample(range(len(blotkarz)) ,5)
+f_cards_numbers = random.sample(range(len(figurant)) ,5)
+
+b_cards = [blotkarz[x] for x in b_cards_numbers]
+f_cards = [figurant[x] for x in f_cards_numbers]
+
+print(b_cards)
+
+# BOOLS
+b_numbers = [x[0] for x in b_cards]
+f_numbers = [x[0] for x in f_cards]
+
+count_cards = {}
+
+
+for i in b_numbers:
+    if i in count_cards:
+        count_cards[i] += 1
+    else:
+        count_cards[i] =1
+
+print(count_cards)
+
+n = list(count_cards.values())
+print(n)
+b_value = 0
+
+
+b_numbers.sort()
+
+
+street = False
+if b_numbers == list(range(b_numbers[0],b_numbers[0]+5)):
+    street=True
+colour = False
+if len(set([x[1] for x in b_cards])) == 1:
+    colour = True
+
+if street and colour:
+    b_value = 8
+elif n.count(4) == 1:
+    b_value = 7
+elif n.count(2) == 1 and n.count(3) == 1:  # do poprawy
+    b_value = 6
+elif colour:
+    b_value=5
+elif street:
+    b_value=4
+elif n.count(3) == 1:
+    b_value = 3
+elif n.count(2) == 2:
+    b_value =2
+elif n.count(2) == 1:
+    b_value = 1
+
+print("b:",b_value)
+######################################################################################
+count_cards = {}
+
+for i in f_numbers:
+    if i in count_cards:
+        count_cards[i] += 1
+    else:
+        count_cards[i] =1
+
+print(count_cards)
+
+n = list(count_cards.values())
+print(n)
+f_value = 0
+
+
+f_numbers.sort()
+
+
+colour = False
+if len(set([x[1] for x in f_cards])) == 1:
+    colour = True
+
+if n.count(4) == 1:
+    f_value = 7
+elif n.count(2) == 1 and n.count(3) == 1:  # do poprawy
+    f_value = 6
+elif colour:
+    f_value=5
+elif n.count(3) == 1:
+    f_value = 3
+elif n.count(2) == 2:
+    f_value =2
+elif n.count(2) == 1:
+    f_value = 1
+
+print("f:",f_value)
+# możlliwe przypadki kiedy kiedy blotkarz jest lepszy:
+# para - nigdy -1
+# dwie pary -2
+# trójka -3
+# strit - figurant nie może go mieć -4
+# kolor -5
+# full house -6
+# kareta -7
+# poker - wygrywa blotkarz, figurant nie możę mieć pokera -8
+
+
+#SZACHY
+
+inp = "black c4 c8 h3"
+inp = inp.split()
+player_colour = inp[0]
+black_king = [ord(inp[1][0])-97,int(inp[1][1])-1]
+white_king = [ord(inp[2][0])-97,int(inp[2][1])-1]
+white_tower = [ord(inp[3][0])-97,int(inp[3][1])-1]
+
+board = []
+for i in range(8):
+    board.append([0]*8)
+
+#print(board)
+#print(black_king)
+
+
+def mat(b_king_pos):
+    for i in range(-1, 2):
+        for j in range(-1, 2):
+            if not (b_king_pos[0] + i < 0 or b_king_pos[0] + i > 7 or b_king_pos[1] + j < 0 or b_king_pos[1] + j > 7 or (i==0 and j==0)):
+                if bicia[b_king_pos[0]+i][b_king_pos[1]+j]==0:
+                    return False
+    return True
+
+print(mat(black_king))
+
+while True:
+    bicia = board.copy()
+
+    for i in range(8):
+        bicia[white_tower[0]][i] = 1
+        bicia[i][white_tower[1]] = 1
+
+    #print(white_king)
+    for i in range(-1, 2):
+        for j in range(-1, 2):
+            if not (white_king[0] + i < 0 or white_king[0] + i > 7 or white_king[1] + j < 0 or white_king[1] + j > 7):
+                # print(i,j)
+                bicia[white_king[0] + i][white_king[1] + j] = 1
+
+    for i in range(8):
+        print(bicia[i])
+
 
 
 
